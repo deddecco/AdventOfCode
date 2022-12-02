@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class ElfRockPaperScissors {
 
@@ -19,9 +20,7 @@ public class ElfRockPaperScissors {
      public static void main(String[] args) throws IOException {
           String filePath = "C:\\Users\\andre\\IdeaProjects\\AdventOfCode\\elf-input.txt";
           String[][] gameResults = readFile(filePath);
-
           int myScore = calculateScore(gameResults);
-
           System.out.println("My score: " + myScore);
      }
 
@@ -32,57 +31,56 @@ public class ElfRockPaperScissors {
           int myScore = 0;
 
           for (String[] game : gameResults) {
-               convertGames(game);
                int roundScore = 0;
                // opponent plays rock
-               if (game[0].equals("Rock")) {
-                    // if I play scissors
-                    if (game[1].equals("Scissors")) {
-                         roundScore = SCISSORS_SCORE;
-                         roundScore += LOSS_SCORE;
-                    }
-                    // if I play paper
-                    if (game[1].equals("Paper")) {
+               if (game[0].equals("A")) {
+                    // if I need to win
+                    if (game[1].equals("Z")) {
+                         roundScore = PAPER_SCORE;
                          roundScore += WIN_SCORE;
-                         roundScore += PAPER_SCORE;
                     }
-                    // if I also play rock
-                    if (game[1].equals("Rock")) {
-                         roundScore += DRAW_SCORE;
+                    // if I need to draw
+                    if (game[1].equals("Y")) {
                          roundScore += ROCK_SCORE;
+                         roundScore += DRAW_SCORE;
+                    }
+                    // if I need to lose
+                    if (game[1].equals("X")) {
+                         roundScore += SCISSORS_SCORE;
+                         roundScore += LOSS_SCORE;
 
                     }
                }
 
                // opponent plays paper
-               if (game[0].equals("Paper")) {
-                    // I play paper
-                    if (game[1].equals("Paper")) {
+               if (game[0].equals("B")) {
+                    // if I need to draw
+                    if (game[1].equals("Y")) {
                          roundScore += DRAW_SCORE;
                          roundScore += PAPER_SCORE;
-                    }// I play rock
-                    if (game[1].equals("Rock")) {
+                    }// if I need to lose
+                    if (game[1].equals("X")) {
                          roundScore += LOSS_SCORE;
                          roundScore += ROCK_SCORE;
-                    } // I play scissors
-                    if (game[1].equals("Scissors")) {
+                    } // if I need to win
+                    if (game[1].equals("Z")) {
                          roundScore += WIN_SCORE;
                          roundScore += SCISSORS_SCORE;
                     }
                }
 
                // opponent plays scissors
-               if (game[0].equals("Scissors")) {
-                    // I play scissors
-                    if (game[1].equals("Scissors")) {
+               if (game[0].equals("C")) {
+                    // if I need to draw
+                    if (game[1].equals("Y")) {
                          roundScore += DRAW_SCORE;
                          roundScore += SCISSORS_SCORE;
-                    } // I play rock
-                    if (game[1].equals("Rock")) {
+                    } // if I need to win
+                    if (game[1].equals("Z")) {
                          roundScore += WIN_SCORE;
                          roundScore += ROCK_SCORE;
-                    }// I play paper
-                    if (game[1].equals("Paper")) {
+                    }// if I need to lose
+                    if (game[1].equals("X")) {
                          roundScore += LOSS_SCORE;
                          roundScore += PAPER_SCORE;
                     }
@@ -99,6 +97,10 @@ public class ElfRockPaperScissors {
      private static String[][] readFile(String filePath) throws IOException {
           BufferedReader reader = new BufferedReader(new FileReader(filePath));
 
+          return populateArray(reader);
+     }
+
+     private static String[][] populateArray(BufferedReader reader) throws IOException {
           String[][] gameResults = new String[2500][2];
 
           int i = 0;
@@ -114,7 +116,9 @@ public class ElfRockPaperScissors {
      }
 
      /**
-      * change ABC/XYZ to "Rock", "Paper", "Scissors" for easier readability
+      * change ABC to "Rock", "Paper", "Scissors"
+      * and XYX to "Lose", "Draw", "Win
+      * for easier readability
       */
      private static void convertGames(String[] game) {
           switch (game[0]) {
@@ -123,9 +127,11 @@ public class ElfRockPaperScissors {
                case "C" -> game[0] = "Scissors";
           }
           switch (game[1]) {
-               case "X" -> game[1] = "Rock";
-               case "Y" -> game[1] = "Paper";
-               case "Z" -> game[1] = "Scissors";
+               case "X" -> game[1] = "Lose";
+               case "Y" -> game[1] = "Draw";
+               case "Z" -> game[1] = "Win";
           }
+
+          System.out.println(Arrays.deepToString(game));
      }
 }

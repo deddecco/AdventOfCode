@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfRockPaperScissors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ElfCalorieCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ElfCalorieCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ElfRockPaperScissors">
     <configuration name="ElfCalorieCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ElfCalorieCounter" />
       <module name="AdventOfCode" />
@@ -61,8 +61,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElfRockPaperScissors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ElfRockPaperScissors" />
+      <module name="AdventOfCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ElfRockPaperScissors" />
         <item itemvalue="Application.ElfCalorieCounter" />
       </list>
     </recent_temporary>
@@ -75,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669937861211</updated>
-      <workItem from="1669937862728" duration="5424000" />
+      <workItem from="1669937862728" duration="11583000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -91,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669941983328</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added a calculation (just out of curiosity-- not necessary for either star-earning problem) to find the total amount of nutrition gathered by all elves, not just the best elf, and not just the top 3 elves">
+      <created>1669989340195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669989340195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started Advent of Code (on the Thursday of the first week of the season)" />
     <MESSAGE value="Finished counting the calories of a set of ambitious elves, earned a ⭐ on the first day of the contest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished counting the calories of a set of ambitious elves, earned a ⭐ on the first day of the contest" />
+    <MESSAGE value="Added a calculation (just out of curiosity-- not necessary for either star-earning problem) to find the total amount of nutrition gathered by all elves, not just the best elf, and not just the top 3 elves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a calculation (just out of curiosity-- not necessary for either star-earning problem) to find the total amount of nutrition gathered by all elves, not just the best elf, and not just the top 3 elves" />
   </component>
 </project>

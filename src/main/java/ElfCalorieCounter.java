@@ -23,11 +23,16 @@ public class ElfCalorieCounter {
           // find the sum of the top 3 best-performing elves
           int top3Cals = getSumOfTopNElements(elfCalories, 3);
 
+
+          int allCals = getSumOfTopNElements(elfCalories, elfCalories.size());
           // display the calorie counts of all elves
           System.out.println("Calories per elf: " + elfCalories);
 
           // display the calorie count of the 3 most productive, summed together
           System.out.println("The calories collected by the top 3 most productive elves: " + top3Cals);
+
+          // display the total calorie count
+          System.out.println("Total calorie count collected by all elves: " + allCals);
      }
 
      private static int getSumOfTopNElements(List<Integer> elfCalories, int maxIndex) {

@@ -36,17 +36,16 @@ public class ElfSectionOverlapPairsCounter {
      }
 
      private static int count(int surroundedRanges, boolean oneRangeContainsTheOther) {
-          // if the third boolean is true, increment the counter
           if (oneRangeContainsTheOther) {
                surroundedRanges++;
           }
           return surroundedRanges;
      }
 
+     // convert strings to ints, put them in array in same order as when they were strings
      private static int[] convertStringsToInts(String[] lineSplit) {
           int[] converted = new int[lineSplit.length];
 
-          // convert strings to ints, put them in array in same order as when they were strings
           for (int i = 0; i < lineSplit.length; i++) {
                converted[i] = Integer.parseInt(lineSplit[i]);
           }

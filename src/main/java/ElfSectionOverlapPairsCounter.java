@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class ElfSectionPairsCounter {
+public class ElfSectionOverlapPairsCounter {
 
      public static void main(String[] args) throws IOException {
           String filePath = "C:\\Users\\andre\\IdeaProjects\\AdventOfCode\\elf-input.txt";

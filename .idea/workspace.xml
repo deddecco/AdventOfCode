@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="renamed class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfLessStrictOverlap.java" afterDir="false" />
+    <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfStackReverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ElfSectionOverlapPairsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ElfSectionOverlapPairsCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ElfLessStrictOverlap">
+  <component name="RunManager" selected="Application.ElfStackReverse">
     <configuration name="ElfBadges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ElfBadges" />
       <module name="AdventOfCode" />
@@ -71,20 +70,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElfRockPaperScissors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfRockPaperScissors" />
-      <module name="AdventOfCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElfRucksacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfRucksacks" />
-      <module name="AdventOfCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ElfSectionOverlapPairsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ElfSectionOverlapPairsCounter" />
       <module name="AdventOfCode" />
@@ -92,13 +77,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElfStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ElfStack" />
+      <module name="AdventOfCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElfStackReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ElfStackReverse" />
+      <module name="AdventOfCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ElfStackReverse" />
+        <item itemvalue="Application.ElfStack" />
         <item itemvalue="Application.ElfLessStrictOverlap" />
         <item itemvalue="Application.ElfSectionOverlapPairsCounter" />
         <item itemvalue="Application.ElfBadges" />
-        <item itemvalue="Application.ElfRucksacks" />
-        <item itemvalue="Application.ElfRockPaperScissors" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669937861211</updated>
       <workItem from="1669937862728" duration="13084000" />
-      <workItem from="1670078063905" duration="21199000" />
+      <workItem from="1670078063905" duration="40465000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670191057759</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="working from framework of first problem, find howmany sets overlap at all">
+      <created>1670194490244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670194490244</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +190,7 @@
     <MESSAGE value="second daily problem for dec 3&#10;&#10;elves now travel in groups and have a single common elemnt between them &#10;&#10;common element = &quot;badge&quot;&#10;&#10;need sum of priorities (same calculation rules as other puzzle from today) of badges of each of 100 groups of 3 elves" />
     <MESSAGE value="first problem dec 4&#10;given list of 4 numbers figure out how many lists are such that &#10;the first pair contains the second or &#10;the second pair contains the first" />
     <MESSAGE value="renamed class" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed class" />
+    <MESSAGE value="working from framework of first problem, find howmany sets overlap at all" />
+    <option name="LAST_COMMIT_MESSAGE" value="working from framework of first problem, find howmany sets overlap at all" />
   </component>
 </project>

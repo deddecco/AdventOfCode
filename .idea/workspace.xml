@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfStackReverse.java" afterDir="false" />
+    <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="daily problems for 12/6&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfMarkerLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfMessageLocator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,14 +55,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ElfStackReverse">
-    <configuration name="ElfBadges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfBadges" />
-      <module name="AdventOfCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ElfMessageLocator">
     <configuration name="ElfLessStrictOverlap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ElfLessStrictOverlap" />
       <module name="AdventOfCode" />
@@ -70,8 +63,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElfSectionOverlapPairsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfSectionOverlapPairsCounter" />
+    <configuration name="ElfMarkerLocator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ElfMarkerLocator" />
+      <module name="AdventOfCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElfMessageLocator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ElfMessageLocator" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ElfMessageLocator" />
+        <item itemvalue="Application.ElfMarkerLocator" />
         <item itemvalue="Application.ElfStackReverse" />
         <item itemvalue="Application.ElfStack" />
         <item itemvalue="Application.ElfLessStrictOverlap" />
-        <item itemvalue="Application.ElfSectionOverlapPairsCounter" />
-        <item itemvalue="Application.ElfBadges" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669937861211</updated>
       <workItem from="1669937862728" duration="13084000" />
-      <workItem from="1670078063905" duration="40465000" />
+      <workItem from="1670078063905" duration="47589000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670194490244</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order">
+      <created>1670292176365</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670292176365</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="first problem dec 4&#10;given list of 4 numbers figure out how many lists are such that &#10;the first pair contains the second or &#10;the second pair contains the first" />
     <MESSAGE value="renamed class" />
     <MESSAGE value="working from framework of first problem, find howmany sets overlap at all" />
-    <option name="LAST_COMMIT_MESSAGE" value="working from framework of first problem, find howmany sets overlap at all" />
+    <MESSAGE value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
+    <option name="LAST_COMMIT_MESSAGE" value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
   </component>
 </project>

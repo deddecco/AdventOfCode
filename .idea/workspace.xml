@@ -5,9 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="daily problems for 12/6&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfMarkerLocator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfMessageLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/py/day07.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/py/day12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/py/small-input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bishop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DijkstraFromHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfClimber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfRope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ElfVisibleTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Queen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Rook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aoc2022/ElfDegreeMatrixGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +46,14 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2IKkrFa3yltprKWaC1WR0WV0raP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,64 +61,82 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "Sample Text",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last.edited.regexp&quot;: &quot;Sample Text&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/andre/IdeaProjects/AdventOfCode/src/main/java/org/example&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.ElfMessageLocator">
-    <configuration name="ElfLessStrictOverlap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfLessStrictOverlap" />
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\IdeaProjects\AdventOfCode\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.King">
+    <configuration name="Bishop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bishop" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElfMarkerLocator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfMarkerLocator" />
+    <configuration name="King" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="King" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElfMessageLocator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfMessageLocator" />
+    <configuration name="Pawn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pawn" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElfStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfStack" />
+    <configuration name="Queen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Queen" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElfStackReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ElfStackReverse" />
+    <configuration name="Rook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Rook" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.King" />
+      <item itemvalue="Application.Rook" />
+      <item itemvalue="Application.Queen" />
+      <item itemvalue="Application.Pawn" />
+      <item itemvalue="Application.Bishop" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ElfMessageLocator" />
-        <item itemvalue="Application.ElfMarkerLocator" />
-        <item itemvalue="Application.ElfStackReverse" />
-        <item itemvalue="Application.ElfStack" />
-        <item itemvalue="Application.ElfLessStrictOverlap" />
+        <item itemvalue="Application.King" />
+        <item itemvalue="Application.Queen" />
+        <item itemvalue="Application.Rook" />
+        <item itemvalue="Application.Bishop" />
+        <item itemvalue="Application.Pawn" />
       </list>
     </recent_temporary>
   </component>
@@ -111,6 +150,36 @@
       <updated>1669937861211</updated>
       <workItem from="1669937862728" duration="13084000" />
       <workItem from="1670078063905" duration="47589000" />
+      <workItem from="1670440097029" duration="13240000" />
+      <workItem from="1670454527381" duration="2858000" />
+      <workItem from="1670465824170" duration="33735000" />
+      <workItem from="1670871390526" duration="4011000" />
+      <workItem from="1670876171382" duration="10315000" />
+      <workItem from="1670941408378" duration="23813000" />
+      <workItem from="1671115536117" duration="20014000" />
+      <workItem from="1671459073643" duration="32197000" />
+      <workItem from="1672152563525" duration="22816000" />
+      <workItem from="1672773954146" duration="9345000" />
+      <workItem from="1674701302680" duration="44000" />
+      <workItem from="1675280851262" duration="6363000" />
+      <workItem from="1675362029676" duration="4291000" />
+      <workItem from="1675434139718" duration="2804000" />
+      <workItem from="1675526178654" duration="1334000" />
+      <workItem from="1675784104924" duration="3044000" />
+      <workItem from="1683901185404" duration="1071000" />
+      <workItem from="1683944081662" duration="134000" />
+      <workItem from="1683944269826" duration="718000" />
+      <workItem from="1683945118798" duration="162000" />
+      <workItem from="1684027451287" duration="678000" />
+      <workItem from="1684028551137" duration="864000" />
+      <workItem from="1684158269118" duration="7388000" />
+      <workItem from="1684171100654" duration="477000" />
+      <workItem from="1684181049267" duration="4453000" />
+      <workItem from="1684208422715" duration="314000" />
+      <workItem from="1684245798606" duration="13844000" />
+      <workItem from="1684326990773" duration="11228000" />
+      <workItem from="1684342649880" duration="13209000" />
+      <workItem from="1684368826763" duration="3817000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -200,5 +269,15 @@
     <MESSAGE value="working from framework of first problem, find howmany sets overlap at all" />
     <MESSAGE value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
     <option name="LAST_COMMIT_MESSAGE" value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 
-public class Queen {
+public class Queen extends Piece {
     public static ArrayList<String> moveList = new ArrayList<>();
 
     // can move in any direction-- like either a rook or a bishop-- as long as there is space
@@ -17,14 +17,13 @@ public class Queen {
     // knowing this path and its length-- for free-- will give the King's optimal path
 
     public static void main(String[] args) {
-
         Queen q1 = new Queen();
         setup(q1);
     }
 
     private static void setup(Queen q1) {
         String start = "a1";
-        String end = "h4";
+        String end = "h6";
         System.out.println("start square: " + start);
         System.out.println("end square: " + end);
         System.out.println("number of optimal moves: " + q1.getOptimalMoves(start, end));
@@ -39,10 +38,10 @@ public class Queen {
      * along the diagonal from the start square to the end square. Otherwise, the optimal combination is one which contains one rook-like move and one bishop-like move by the queen, and which traverses the smallest number of squares in the process.
      */
     private int getOptimalMoves(String start, String end) {
-        char startFile = start.charAt(0);
-        int startRank = Character.getNumericValue(start.charAt(1));
-        char endFile = end.charAt(0);
-        int endRank = Character.getNumericValue(end.charAt(1));
+        char startFile = getFile(start);
+        int startRank = getRank(start);
+        int endRank = getRank(end);
+        char endFile = getFile(end);
 
 
         // queen in right place already
@@ -89,7 +88,6 @@ public class Queen {
         moveList.add(end);
         return 2;
     }
-
 
     /**
      * Create a hashMap whose key-value pair is the algebraic notation of a legal intermediate square and the length of the path from start to end which goes through that square.
@@ -171,11 +169,7 @@ public class Queen {
         int rankConverted = 8 - rank;
 
         // populate the board setting all squares as invisible to the bishop
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                board[i][j] = 'I';
-            }
-        }
+        populateBlank(board);
 
 
         /*
@@ -222,45 +216,6 @@ public class Queen {
 
 
     /**
-     * files in chess notation = columns in Java notation.
-     * if viewing as White, then a file on left, h file on right.
-     * if viewing as Black, then h file on left, a file on right
-     */
-    public int convertFileToNumFromLetter(char file) {
-
-        return switch (file) {
-            case 'a' -> 0;
-            case 'b' -> 1;
-            case 'c' -> 2;
-            case 'd' -> 3;
-            case 'e' -> 4;
-            case 'f' -> 5;
-            case 'g' -> 6;
-            case 'h' -> 7;
-            default -> -1;
-        };
-    }
-
-    /**
-     * Given the index of the file in 0-7 Java index terms (of the column of a 2d array), convert this back to a-h chess file notation
-     */
-    public char convertFileToLetterFromNum(int fileNum) {
-
-        return switch (fileNum) {
-            case 0 -> 'a';
-            case 1 -> 'b';
-            case 2 -> 'c';
-            case 3 -> 'd';
-            case 4 -> 'e';
-            case 5 -> 'f';
-            case 6 -> 'g';
-            case 7 -> 'h';
-            default -> '\0';
-        };
-    }
-
-
-    /**
      * A square is common to two boards if it is visible by the queen placed as is on both boards provided as inputs.
      * If a square is visible by the queen on a particular board, that square will be notated by * in its position on that board.
      * If the same position has * on both boards, then the square is common to those boards and the
@@ -269,7 +224,7 @@ public class Queen {
     public List<String> findCommonSquare(char[][] board1, char[][] board2) {
         Queen q1 = new Queen();
 
-        // the currennt common square
+        // the current common square
         String commonSquare;
 
         // a gathering place for all common squares
@@ -286,18 +241,4 @@ public class Queen {
         }
         return commonSquares;
     }
-
-
-    /**
-     * helpful for debugging
-     */
-    public static void printBoard(char[][] board) {
-        for (char[] chars : board) {
-            for (char aChar : chars) {
-                System.out.print(aChar + " ");
-            }
-            System.out.println();
-        }
-    }
-
 }

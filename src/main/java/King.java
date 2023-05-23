@@ -11,7 +11,7 @@ import static java.lang.String.valueOf;
  * no castling
  * optimal length for king is number of squares of shortest optimal path for queen
  */
-public class King {
+public class King extends Piece {
     public static ArrayList<String> moveList = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -30,11 +30,11 @@ public class King {
 
     public int getOptimalMoves(String start, String end) {
 
-        char startFile = start.charAt(0);
-        char endFile = end.charAt(0);
+        char startFile = getFile(start);
+        char endFile = getFile(end);
 
-        int startRank = getNumericValue(start.charAt(1));
-        int endRank = getNumericValue(end.charAt(1));
+        int startRank = getRank(start);
+        int endRank = getRank(end);
 
 
         // treat the King as a Queen for the purposes of finding the optimal route--
@@ -50,81 +50,80 @@ public class King {
 
 
         // bishop moves
-        boolean kingMove1AsBishop = Math.abs(start.charAt(0) - bestIntermediateAsQueen.charAt(0))
-                == Math.abs(start.charAt(1) - bestIntermediateAsQueen.charAt(1));
+        boolean kingMove1AsBishop = Math.abs(start.charAt(0) - bestIntermediateAsQueen.charAt(0)) == Math.abs(start.charAt(1) - bestIntermediateAsQueen.charAt(1));
 
-        boolean kingMove2AsBishop = Math.abs(end.charAt(0) - bestIntermediateAsQueen.charAt(0))
-                == Math.abs(end.charAt(1) - bestIntermediateAsQueen.charAt(1));
+        boolean kingMove2AsBishop = Math.abs(end.charAt(0) - bestIntermediateAsQueen.charAt(0)) == Math.abs(end.charAt(1) - bestIntermediateAsQueen.charAt(1));
 
         // rook moves
-        boolean kingMove1AsRook = Math.abs(start.charAt(0) - bestIntermediateAsQueen.charAt(0)) == 0
-                || Math.abs(start.charAt(1) - bestIntermediateAsQueen.charAt(1)) == 0;
+        boolean kingMove1AsRook = Math.abs(start.charAt(0) - bestIntermediateAsQueen.charAt(0)) == 0 || Math.abs(start.charAt(1) - bestIntermediateAsQueen.charAt(1)) == 0;
 
-        boolean kingMove2AsRook = Math.abs(end.charAt(0) - bestIntermediateAsQueen.charAt(0)) == 0
-                || Math.abs(end.charAt(1) - bestIntermediateAsQueen.charAt(1)) == 0;
+        boolean kingMove2AsRook = Math.abs(end.charAt(0) - bestIntermediateAsQueen.charAt(0)) == 0 || Math.abs(end.charAt(1) - bestIntermediateAsQueen.charAt(1)) == 0;
 
         // for Bishops
-        boolean lowRankToHighRank = endRank > startRank;
-        boolean highRankToLowRank = endRank < startRank;
+        boolean lowRankToHighRank = startRank < endRank;
+        boolean highRankToLowRank = startRank > endRank;
 
         // for Rooks
+        // as White, moving right to left
         boolean furtherIntoQueenside = endFile < startFile;
+        // as White, moving left to right
         boolean furtherIntoKingside = endFile > startFile;
+
+
+        // as White, moving away from where the pieces would be set up for a normal game
         boolean furtherUpFile = endRank > startRank;
+        // as White, moving toward where the pieces would be set up for a normal game
         boolean furtherDownFile = endRank < startRank;
 
         char file = startFile;
         int rank = startRank;
 
+        // the intermediate files and ranks come from the calculated best intermediate square if the king were a queen
         char interFile = bestIntermediateAsQueen.charAt(0);
         int interRank = getNumericValue(bestIntermediateAsQueen.charAt(1));
+
         if (kingMove1AsBishop) {
-            letKingMoveAsBishop(interFile,
-                    interRank,
-                    lowRankToHighRank,
-                    highRankToLowRank,
-                    file,
-                    rank);
-        } else if (kingMove2AsBishop) {
+            letKingMoveAsBishop(interFile, interRank, lowRankToHighRank, highRankToLowRank, file, rank);
+        } else if (kingMove1AsRook) {
+            letKingMoveAsRook(furtherIntoQueenside, furtherIntoKingside, furtherUpFile, furtherDownFile, file, rank);
+        }
+        if (kingMove2AsBishop) {
+
             rank = interRank;
             file = interFile;
-            letKingMoveAsBishop(endFile,
-                    endRank,
-                    lowRankToHighRank,
-                    highRankToLowRank,
-                    file,
-                    rank);
-        } else if (kingMove1AsRook) {
-            letKingMoveAsRook(furtherIntoQueenside,
-                    furtherIntoKingside,
-                    furtherUpFile,
-                    furtherDownFile,
-                    file,
-                    rank);
+            lowRankToHighRank = interRank < endRank;
+            highRankToLowRank = interRank > endRank;
+
+            letKingMoveAsBishop(endFile, endRank, lowRankToHighRank, highRankToLowRank, file, rank);
         } else if (kingMove2AsRook) {
             rank = interRank;
             file = interFile;
-            letKingMoveAsRook(furtherIntoQueenside,
-                    furtherIntoKingside,
-                    furtherUpFile,
-                    furtherDownFile,
-                    file,
-                    rank);
+            letKingMoveAsRook(furtherIntoQueenside, furtherIntoKingside, furtherUpFile, furtherDownFile, file, rank);
         }
         moveList.add(end);
         return moveList.size();
     }
 
-    public void letKingMoveAsBishop(char endFile, int endRank,
-                                    boolean lowRankToHighRank, boolean highRankToLowRank,
-                                    char file, int rank) {
+    public void letKingMoveAsBishop(char endFile, int endRank, boolean lowRankToHighRank, boolean highRankToLowRank, char file, int rank) {
         if (lowRankToHighRank) {
+          /*  System.out.println("entering low-to-high loop");
+            System.out.println("file: " + file);
+            System.out.println("rank: " + rank);
+            System.out.println("endFile: " + endFile);
+            System.out.println("endRank: " + endRank);*/
             while (file <= endFile && rank <= endRank) {
                 moveList.add(file + valueOf(rank));
                 file++;
                 rank++;
             }
-        } else if (highRankToLowRank) {
+        }
+
+        if (highRankToLowRank) {
+            System.out.println("entering high-to-low loop");
+            System.out.println("file: " + file);
+            System.out.println("rank: " + rank);
+            System.out.println("endFile: " + endFile);
+            System.out.println("endRank: " + endRank);
             while (file >= endFile && rank >= endRank) {
                 moveList.add(file + valueOf(rank));
                 file--;
@@ -133,9 +132,7 @@ public class King {
         }
     }
 
-    public void letKingMoveAsRook(boolean furtherIntoQueenside, boolean furtherIntoKingside,
-                                  boolean furtherUpFile, boolean furtherDownFile,
-                                  char file, int rank) {
+    public void letKingMoveAsRook(boolean furtherIntoQueenside, boolean furtherIntoKingside, boolean furtherUpFile, boolean furtherDownFile, char file, int rank) {
         if (furtherIntoQueenside) {
             while (file >= 'a') {
                 moveList.add(file + valueOf(rank));

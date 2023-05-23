@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="daily problems for 12/6&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order">
-      <change afterPath="$PROJECT_DIR$/py/day07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/py/day12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/py/small-input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DijkstraFromHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfClimber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfRope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ElfVisibleTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/King.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Queen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Rook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aoc2022/ElfDegreeMatrixGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pawn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Pawn" />
+    <configuration name="Knight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Knight" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,19 +111,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Knight" />
       <item itemvalue="Application.King" />
       <item itemvalue="Application.Rook" />
       <item itemvalue="Application.Queen" />
-      <item itemvalue="Application.Pawn" />
       <item itemvalue="Application.Bishop" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.King" />
         <item itemvalue="Application.Queen" />
+        <item itemvalue="Application.Knight" />
         <item itemvalue="Application.Rook" />
         <item itemvalue="Application.Bishop" />
-        <item itemvalue="Application.Pawn" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +166,11 @@
       <workItem from="1684245798606" duration="13844000" />
       <workItem from="1684326990773" duration="11228000" />
       <workItem from="1684342649880" duration="13209000" />
-      <workItem from="1684368826763" duration="3817000" />
+      <workItem from="1684368826763" duration="5037000" />
+      <workItem from="1684414930412" duration="7496000" />
+      <workItem from="1684606552765" duration="1089000" />
+      <workItem from="1684608167088" duration="1708000" />
+      <workItem from="1684858150853" duration="4298000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -251,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670292176365</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="one class per chess piece to determine the most efficient route that that partcular chess piece can take between any 2 given squares on a standard 8x8 chess board">
+      <created>1684373274169</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684373274169</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +266,8 @@
     <MESSAGE value="renamed class" />
     <MESSAGE value="working from framework of first problem, find howmany sets overlap at all" />
     <MESSAGE value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
-    <option name="LAST_COMMIT_MESSAGE" value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
+    <MESSAGE value="one class per chess piece to determine the most efficient route that that partcular chess piece can take between any 2 given squares on a standard 8x8 chess board" />
+    <option name="LAST_COMMIT_MESSAGE" value="one class per chess piece to determine the most efficient route that that partcular chess piece can take between any 2 given squares on a standard 8x8 chess board" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -277,6 +276,16 @@
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/King.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/King.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

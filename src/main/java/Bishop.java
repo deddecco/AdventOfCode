@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Bishop {
+public class Bishop extends Piece {
 
     public static ArrayList<String> moveList = new ArrayList<>();
 
@@ -161,11 +161,7 @@ public class Bishop {
         int rankConverted = 8 - rank;
 
         // populate the board setting all squares as invisible to the bishop
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                board[i][j] = 'I';
-            }
-        }
+        populateBlank(board);
 
 
         /*
@@ -189,6 +185,8 @@ public class Bishop {
         setBoardVisibilityArrayBishop(board, fileConverted, rankConverted);
         return board;
     }
+
+
 
     static void setBoardVisibilityArrayBishop(char[][] board, int fileConverted, int rankConverted) {
         int offset = 1;
@@ -214,43 +212,5 @@ public class Bishop {
             board[rankConverted - offset][fileConverted - offset] = '*';
             offset++;
         }
-    }
-
-    /**
-     * files in chess notation = columns in Java notation.
-     * if viewing as White, then a file on left, h file on right.
-     * if viewing as Black, then h file on left, a file on right
-     */
-    public int convertFileToNumFromLetter(char file) {
-
-        return switch (file) {
-            case 'a' -> 0;
-            case 'b' -> 1;
-            case 'c' -> 2;
-            case 'd' -> 3;
-            case 'e' -> 4;
-            case 'f' -> 5;
-            case 'g' -> 6;
-            case 'h' -> 7;
-            default -> -1;
-        };
-    }
-
-    /**
-     * given the index of the file in 0-7 Java terms, convert this back to a-h chess notation
-     */
-    public char convertFileToLetterFromNum(int fileNum) {
-
-        return switch (fileNum) {
-            case 0 -> 'a';
-            case 1 -> 'b';
-            case 2 -> 'c';
-            case 3 -> 'd';
-            case 4 -> 'e';
-            case 5 -> 'f';
-            case 6 -> 'g';
-            case 7 -> 'h';
-            default -> '\0';
-        };
     }
 }

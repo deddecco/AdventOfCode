@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import static java.lang.Character.getNumericValue;
 import static java.lang.Math.abs;
 
-public class Pawn {
+public class Pawn extends Piece {
 
     /*
      we will assume that a pawn always takes advantage of
@@ -24,9 +24,9 @@ public class Pawn {
         String end = "a3";
 
         System.out.println("color: " + color);
+        System.out.println("start and end on same file?: " + p1.checkIfSameFile(start, end));
         System.out.println("starting square: " + start);
         System.out.println("ending square: " + end);
-        System.out.println("start and end on same file?: " + p1.checkIfSameFile(start, end));
         System.out.println("number of optimal moves: " + p1.getOptimalMoves(color, start, end));
         System.out.println("Optimal list of moves from " + start + " to " + end + ": " + moveList);
     }

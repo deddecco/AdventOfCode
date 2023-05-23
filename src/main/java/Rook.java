@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-import static java.lang.Character.*;
+import static java.lang.Character.getNumericValue;
 
-public class Rook {
+public class Rook extends Piece {
 
     public static ArrayList<String> moveList = new ArrayList<>();
 
@@ -68,8 +68,8 @@ public class Rook {
     public void addToMoveList(String start, String end) {
 
 
-        char startFile = start.charAt(0);
-        int endRank = getNumericValue(end.charAt(1));
+        char startFile = getFile(start);
+        int endRank = getRank(end);
 
 
         // trivial case: do nothing

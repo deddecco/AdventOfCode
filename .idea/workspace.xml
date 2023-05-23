@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bishop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +164,7 @@
       <workItem from="1684414930412" duration="7496000" />
       <workItem from="1684606552765" duration="1089000" />
       <workItem from="1684608167088" duration="1708000" />
-      <workItem from="1684858150853" duration="4298000" />
+      <workItem from="1684858150853" duration="12967000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -249,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684373274169</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="continue debugging the king&#10;&#10;start sketching out ideas for the knight&#10;&#10;remove duplicate code from all classes and send it to Piece.java which the other classes become children of">
+      <created>1684867083429</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684867083429</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +268,8 @@
     <MESSAGE value="working from framework of first problem, find howmany sets overlap at all" />
     <MESSAGE value="daily problems for 12/5&#10;&#10;pushing and popping to/from a stack&#10;pushing and popping to/from a stack preserving original order" />
     <MESSAGE value="one class per chess piece to determine the most efficient route that that partcular chess piece can take between any 2 given squares on a standard 8x8 chess board" />
-    <option name="LAST_COMMIT_MESSAGE" value="one class per chess piece to determine the most efficient route that that partcular chess piece can take between any 2 given squares on a standard 8x8 chess board" />
+    <MESSAGE value="continue debugging the king&#10;&#10;start sketching out ideas for the knight&#10;&#10;remove duplicate code from all classes and send it to Piece.java which the other classes become children of" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue debugging the king&#10;&#10;start sketching out ideas for the knight&#10;&#10;remove duplicate code from all classes and send it to Piece.java which the other classes become children of" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -276,15 +278,14 @@
           <properties class="java.util.NoSuchElementException" package="java.util" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/King.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/King.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="15" />
+          <line>30</line>
+          <properties class="King" method="getOptimalMoves">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,7 +4,7 @@ public class Piece {
      * if viewing as White, then a file on left, h file on right.
      * if viewing as Black, then h file on left, a file on right
      */
-    public int convertFileToNumFromLetter(char file) {
+    public static int convertFileToNumFromLetter(char file) {
 
         return switch (file) {
             case 'a' -> 0;

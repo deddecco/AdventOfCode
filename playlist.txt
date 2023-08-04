@@ -1,0 +1,13 @@
+TITLE	TIME	YEAR	ARTIST	ALBUM	STUDIO	GENRE	PLAYS
+I	(15:36)	{1962}	Berlin Phil	Beethoven: Symphony No. 9	DG	Classical	0
+II	(10:26)	{1962}	Berlin Phil	Beethoven: Symphony No. 9	DG	Classical	0
+III	(15:54)	{1962}	Berlin Phil	Beethoven: Symphony No. 9	DG	Classical	0
+IV	(6:07)	{1962}	Berlin Phil	Beethoven: Symphony No. 9	DG	Classical	0
+V	(18:13)	{1962}	Berlin Phil	Beethoven: Symphony No. 9	DG	Classical	0
+Allegro con spirito	(4:16)	{1995}	Camerata de Budapest	Sinfonias Volume 1	Naxos	Classical	0
+Andante	(3:47)	{1995}	Camerata de Budapest	Sinfonias Volume 1	Naxos	Classical	0
+Presto	(2:19)	{1995}	Camerata de Budapest	Sinfonias Volume 1	Naxos	Classical	0
+Solfegietto	(1:04)	{1996}	Georges Pludermacher	L'atelier des pianistes	Erato	Classical	0
+Birthday Ode	(1:04)	{2005}	William Boyce	Boyce: Symphonies 1-8	Naxos	Classical	0
+Lady Rich, Her Galliard	(1:57)	{2008}	John Dowland	Musical Banquet	ECM Records	Classical	0
+Lavender Haze	(3:22)	{2022}	Taylor Swift	Midnights (3am edition)	Taylor Swift	Pop	0

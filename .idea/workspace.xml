@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de27d36c-9d0f-45d0-b07f-864e5e38562e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ArrayMergeSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FifthMergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FourthMergeSortPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FrequencyHashMapInJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InfiniteLoopConsoleInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/KnightBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MergeSortPracticeAgain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MergeSortV6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Playlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReturnSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ThirdMergePractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,13 +42,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -52,6 +60,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last.edited.regexp&quot;: &quot;Sample Text&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/andre/IdeaProjects/AdventOfCode/src/main/java/org/example&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -69,59 +78,61 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\andre\IdeaProjects\AdventOfCode\src\main\java" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Knight">
-    <configuration name="Bishop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bishop" />
+  <component name="RunManager" selected="Application.Playlist">
+    <configuration name="ArrayMergeSorter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayMergeSorter" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="King" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="King" />
+    <configuration name="FifthMergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FifthMergeSort" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Knight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Knight" />
+    <configuration name="InfiniteLoopConsoleInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InfiniteLoopConsoleInput" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Queen" />
+    <configuration name="MergeSortV6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeSortV6" />
       <module name="AdventOfCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Rook" />
+    <configuration name="Playlist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Playlist" />
       <module name="AdventOfCode" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\Users\andre\IdeaProjects\AdventOfCode\playlist.txt&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Knight" />
-      <item itemvalue="Application.King" />
-      <item itemvalue="Application.Rook" />
-      <item itemvalue="Application.Queen" />
-      <item itemvalue="Application.Bishop" />
+      <item itemvalue="Application.InfiniteLoopConsoleInput" />
+      <item itemvalue="Application.Playlist" />
+      <item itemvalue="Application.MergeSortV6" />
+      <item itemvalue="Application.FifthMergeSort" />
+      <item itemvalue="Application.ArrayMergeSorter" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Knight" />
-        <item itemvalue="Application.King" />
-        <item itemvalue="Application.Queen" />
-        <item itemvalue="Application.Rook" />
-        <item itemvalue="Application.Bishop" />
+        <item itemvalue="Application.Playlist" />
+        <item itemvalue="Application.InfiniteLoopConsoleInput" />
+        <item itemvalue="Application.MergeSortV6" />
+        <item itemvalue="Application.ArrayMergeSorter" />
+        <item itemvalue="Application.FifthMergeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +185,37 @@
       <workItem from="1685035626424" duration="3774000" />
       <workItem from="1685046598906" duration="97000" />
       <workItem from="1685046726811" duration="5053000" />
-      <workItem from="1685063889521" duration="710000" />
+      <workItem from="1685063889521" duration="2871000" />
+      <workItem from="1685107345246" duration="81000" />
+      <workItem from="1687313309545" duration="400000" />
+      <workItem from="1687350007619" duration="88000" />
+      <workItem from="1687350193402" duration="2118000" />
+      <workItem from="1687436995530" duration="20000" />
+      <workItem from="1688655029685" duration="1160000" />
+      <workItem from="1688750154297" duration="3859000" />
+      <workItem from="1688758499501" duration="2163000" />
+      <workItem from="1689817640482" duration="2553000" />
+      <workItem from="1689821197212" duration="1213000" />
+      <workItem from="1689855760905" duration="8422000" />
+      <workItem from="1689887511569" duration="459000" />
+      <workItem from="1689901867506" duration="642000" />
+      <workItem from="1690048554046" duration="2113000" />
+      <workItem from="1690137222343" duration="496000" />
+      <workItem from="1690304864705" duration="4241000" />
+      <workItem from="1690379847242" duration="3769000" />
+      <workItem from="1690655448255" duration="307000" />
+      <workItem from="1690656170975" duration="8241000" />
+      <workItem from="1690812254067" duration="2333000" />
+      <workItem from="1690829057029" duration="3753000" />
+      <workItem from="1690895482938" duration="5171000" />
+      <workItem from="1690903845046" duration="2193000" />
+      <workItem from="1690911286632" duration="3306000" />
+      <workItem from="1691067925994" duration="233000" />
+      <workItem from="1691072636591" duration="6083000" />
+      <workItem from="1691081815465" duration="15826000" />
+      <workItem from="1691112136645" duration="3400000" />
+      <workItem from="1691156840181" duration="5684000" />
+      <workItem from="1691169733299" duration="6708000" />
     </task>
     <task id="LOCAL-00001" summary="Started Advent of Code (on the Thursday of the first week of the season)">
       <created>1669937995141</created>
@@ -267,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684876310702</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finished the Knight">
+      <created>1685064687768</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685064687768</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +346,7 @@
     <MESSAGE value="one class per chess piece to determine the most efficient route that that partcular chess piece can take between any 2 given squares on a standard 8x8 chess board" />
     <MESSAGE value="continue debugging the king&#10;&#10;start sketching out ideas for the knight&#10;&#10;remove duplicate code from all classes and send it to Piece.java which the other classes become children of" />
     <MESSAGE value="fixed the king" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the king" />
+    <MESSAGE value="finished the Knight" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished the Knight" />
   </component>
 </project>
